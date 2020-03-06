@@ -1,4 +1,5 @@
-const db = require('./conn');
+const db = require('./conn'),
+  bcrypt = require('bcryptjs');
 
 class User {
   constructor(id, first_name, last_name, email, password) {
@@ -38,7 +39,7 @@ class User {
       } else {
         console.log('GO AWAY!!!!!', isValid);
       }
-      return isValid;
+      // return isValid;
     } catch (error) {
       console.error('ERROR: ', error);
       return error;

@@ -11,7 +11,7 @@ router.get('/', async (req, res, next) => {
       parkData: parkData
     },
     partials: {
-      partial: 'partial'
+      partial: 'partial-index'
     }
   });
 });
